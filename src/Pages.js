@@ -3,7 +3,17 @@ import { Link } from "react-router-dom";
 function Pages() {
   return (
     <p>
-      <Link to="login-form">Login Form</Link>
+      <ul>
+        <li>
+          <Link to="login-form">Login Form</Link>
+        </li>
+        <li>
+          <Link to="modal">Modal</Link>
+        </li>
+        <li>
+          <Link to="feedback">Feedback</Link>
+        </li>
+      </ul>
     </p>
   );
 }

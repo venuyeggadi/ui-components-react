@@ -1,0 +1,44 @@
+.feedback {
+  width: 920px;
+  background-color: #1a1832;
+  color: white;
+  font-size: 16px;
+  border-radius: 20px;
+}
+
+.action-section {
+  display: flex;
+  justify-content: flex-end;
+  padding: 24px;
+}
+
+.question {
+  padding: 12px 150px;
+  font-size: 26px;
+}
+
+.rating-container,
+.footer {
+  padding: 38px 56px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.feedback .btn {
+  color: white;
+  border-radius: 5px;
+  padding: 12px 45px;
+}
+
+.feedback .cancel-btn {
+  background-color: inherit;
+  border: 1px solid #7a58f4;
+}
+
+.feedback .submit-btn {
+  background-color: #7a58f4;
+  border: none;
+}

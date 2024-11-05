@@ -5,6 +5,8 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import LoginButton from "./w3schools-how-to/LoginForm/LoginButton";
+import ModalUser from "./w3schools-how-to/Modal/ModalUser";
+import Feedback from "./w3schools-how-to/FeedbackModal/Feedback";
 
 const router = createBrowserRouter([
   {
@@ -14,6 +16,14 @@ const router = createBrowserRouter([
   {
     path: "/login-form",
     element: <LoginButton />,
+  },
+  {
+    path: "/modal",
+    element: <ModalUser />,
+  },
+  {
+    path: "/feedback",
+    element: <Feedback />,
   },
 ]);
 

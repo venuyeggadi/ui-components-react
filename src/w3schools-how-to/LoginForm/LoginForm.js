@@ -1,16 +1,18 @@
 import "./LoginForm.css";
 
-function LoginForm({onClose}) {
+function LoginForm({ onClose }) {
   return (
     <div className="LoginModal">
       <div className="LoginForm">
         <form>
           <div className="modal-close">
-            <span
-              className="material-symbols-rounded close-icon"
-              onClick={onClose}
-            >
+            <span className="material-symbols-rounded" onClick={onClose}>
               close
+            </span>
+          </div>
+          <div className="account-icon">
+            <span class="material-symbols-rounded size-96">
+              account_circle
             </span>
           </div>
           <label htmlFor="username">
