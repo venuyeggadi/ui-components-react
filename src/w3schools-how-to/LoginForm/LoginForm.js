@@ -1,4 +1,6 @@
+import { Close } from "@mui/icons-material";
 import "./LoginForm.css";
+import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 
 function LoginForm({ onClose }) {
   return (
@@ -6,14 +8,10 @@ function LoginForm({ onClose }) {
       <div className="LoginForm">
         <form>
           <div className="modal-close">
-            <span className="material-symbols-rounded" onClick={onClose}>
-              close
-            </span>
+            <Close onClick={onClose} />
           </div>
           <div className="account-icon">
-            <span class="material-symbols-rounded size-96">
-              account_circle
-            </span>
+            <AccountCircleIcon sx={{ fontSize: "96px" }} />
           </div>
           <label htmlFor="username">
             <b>Username</b>
