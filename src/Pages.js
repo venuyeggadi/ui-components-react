@@ -13,6 +13,9 @@ function Pages() {
         <li>
           <Link to="feedback">Feedback</Link>
         </li>
+        <li>
+          <Link to="profile-card">Profile Card</Link>
+        </li>
       </ul>
     </p>
   );
