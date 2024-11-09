@@ -8,6 +8,8 @@ import LoginButton from "./w3schools-how-to/LoginForm/LoginButton";
 import ModalUser from "./w3schools-how-to/Modal/ModalUser";
 import Feedback from "./w3schools-how-to/FeedbackModal/Feedback";
 import ProfileCard from "./w3schools-how-to/ProfileCard/ProfileCard";
+import SideMenu from "./w3schools-how-to/SideMenu/SideMenu";
+import ToggleButton from "./w3schools-how-to/ToggleButton/ToggleButton";
 
 const router = createBrowserRouter([
   {
@@ -30,6 +32,14 @@ const router = createBrowserRouter([
     path: "/profile-card",
     element: <ProfileCard />,
   },
+  {
+    path: "/side-menu",
+    element: <SideMenu />,
+  },
+  {
+    path: "/toggle-button",
+    element: <ToggleButton />,
+  }
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

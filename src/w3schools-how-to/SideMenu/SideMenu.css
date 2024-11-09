@@ -1,0 +1,76 @@
+.side-menu-page {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background: #444;
+  font-family: "Poppins";
+}
+
+.side-menu-page header {
+  padding: 10px 40px;
+  color: white;
+  background-color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.side-menu-page .burger {
+  z-index: 1;
+}
+
+.side-menu-page .burger span {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background: white;
+  margin: 5px;
+  transition: all ease-in 0.3s;
+}
+
+.side-menu-page .burger.open span:nth-child(1) {
+  transform: rotate(45deg) translateY(11px);
+}
+
+.side-menu-page .burger.open span:nth-child(2) {
+  opacity: 0;
+  width: 0;
+}
+
+.side-menu-page .burger.open span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-11px);
+}
+
+nav {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  overflow: auto;
+  background: #222;
+  padding: 40px;
+  font-size: large;
+  color: white;
+  transition: left ease-in 0.3s;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 50px;
+}
+
+nav ul li a {
+  color: white;
+}
+
+nav.open {
+  left: 0;
+}
+
+.main {
+  padding: 40px;
+  color: #bbb;
+}

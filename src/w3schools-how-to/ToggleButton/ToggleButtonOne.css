@@ -1,0 +1,44 @@
+/* 
+  Cannot change lable background when checkbox is checked 
+  So changing the background of the switch instead
+*/
+
+.toggle-button-page {
+  --button-width: 110px;
+  --button-height: 50px;
+  background-color: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.toggle-button-page input[type="checkbox"] {
+  display: none;
+}
+
+.toggle-button-page label {
+  box-sizing: border-box;
+  cursor: pointer;
+  width: var(--button-width);
+  height: var(--button-height);
+  padding: 4px;
+  background-color: #333;
+  border-radius: calc(var(--button-width) / 2);
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.toggle-button-page .switch {
+  background-color: white;
+  width: calc(var(--button-height) - 8px);
+  height: calc(var(--button-height) - 8px);
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+.toggle-button-page input[type="checkbox"]:checked + .switch {
+  transform: translateX(calc(var(--button-width) - var(--button-height)));
+  background-color: blueviolet;
+}
